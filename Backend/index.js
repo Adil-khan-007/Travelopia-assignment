@@ -9,10 +9,6 @@ server.use(express.json());
 
 server.use(cors());
 
-// server.use("/" ,(req,res)=>{
-//     res.send("Working")
-// })
-
 server.use("/",Router)
 
 const PORT = process.argv[2] || 3004;
