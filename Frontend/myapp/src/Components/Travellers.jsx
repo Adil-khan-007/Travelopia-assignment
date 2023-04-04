@@ -8,7 +8,7 @@ function Travellers(props) {
     },[])
 
     const fetchData = ()=>{
-        return fetch("http://localhost:3004/user").then(res=>res.json()).then((data)=>{
+        return fetch("https://kind-ruby-barnacle-gown.cyclic.app/user").then(res=>res.json()).then((data)=>{
             setData(data.data);
         })
     }
